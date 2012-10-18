@@ -15,8 +15,8 @@ which allows you to control your computer using commands entered
 with a keyboard instead of controlling graphical user interfaces
 (GUIs) with a mouse/keyboard combination.
 
-Use the GUI to open the tutorial on github.  Type in the URL:
-    github.com/swcarpentry/2012-10-lbl
+Use the GUI to open the tutorial on github, located at:
+    https://github.com/swcarpentry/2012-10-lbl
 Click on the directory named `1-Shell`.
 
 A *terminal* is a program you run that gives you access to the
