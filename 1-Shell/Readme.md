@@ -15,7 +15,7 @@ which allows you to control your computer using commands entered
 with a keyboard instead of controlling graphical user interfaces
 (GUIs) with a mouse/keyboard combination.
 
-Use the GUI to open the tutorial on github, located at:
+Use a browser to open the tutorial on github, located at:
     https://github.com/swcarpentry/2012-10-lbl
 Click on the directory named `1-Shell`.
 
@@ -54,7 +54,7 @@ by manipulating some experimental data from a set of hearing tests. To get
 the data for this test, you will need internet access. Just enter the
 command:
 
-    git clone https://github.com/JHU-SWC-2012/SWC-bootcamp.git
+    git clone https://github.com/swcarpentry/2012-10-ucb.git
 
 This will grab all of the data needed for this workshop from the
 internet.
