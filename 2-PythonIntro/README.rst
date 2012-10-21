@@ -1,4 +1,7 @@
-`Back To The Shell <http://github.com/swcarpentry/2012-10-lbl/>`_ - `Forward to Version Control <http://github.com/swcarpentry/2012-10-lbl/tree/master/3a-VersionControlLocal`_
+`Back To The Shell`__ - `Forward to Version Control`__
+
+__ back_
+__ forward_
 
 ======
 Python
@@ -93,3 +96,7 @@ IPython Notebook Commands
 - `control-m d`: delete cell
 - `control-m a`: insert a new cell above the current cell
 - `control-m b`: insert a new cell below the current cell
+
+
+.. _back:  http://github.com/swcarpentry/2012-10-lbl/
+.. _forward: http://github.com/swcarpentry/2012-10-lbl/tree/master/3a-VersionControlLocal

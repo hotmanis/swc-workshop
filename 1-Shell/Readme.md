@@ -1,6 +1,6 @@
 # The Shell
 
-[Back To The Menu](http://github.com/swcarpentry/2012-10-lbl/) - [Forward to Python](http://github.com/swcarpentry/2012-10-lbl/tree/master/2-PythonIntro/)
+[Back To The Menu][back] - [Forward to Python][forward]
 
 * * * * *
 
@@ -1033,3 +1033,7 @@ push to remote version control repositories later.
 **Permissions**
 
 **Chaining commands together**
+
+
+[back]: http://github.com/swcarpentry/2012-10-lbl/
+[forward]: http://github.com/swcarpentry/2012-10-lbl/tree/master/2-PythonIntro/

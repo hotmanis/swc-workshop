@@ -1,7 +1,7 @@
 # Local Version Control
 ----
-[Back To Python](http://github.com/UofCSCBC2012/2012-10-lbl/UofCSCBC2012/tree/master/2-PythonIntro - [Forward To Remote Version
-Control](http://github.com/UofCSCBC2012/2012-10-lbl/UofCSCBC2012/tree/master/3b-VersionControlRemote/)
+
+[Back To Python][back] - [Forward To Remote Version Control][forward]
 
 ----
 
@@ -424,3 +424,7 @@ the meantime.
 ## Resources
 
 [git book](http://git-scm.com/book)
+
+
+[back]: http://github.com/UofCSCBC2012/2012-10-lbl/UofCSCBC2012/tree/master/2-PythonIntro
+[forward]: http://github.com/UofCSCBC2012/2012-10-lbl/UofCSCBC2012/tree/master/3b-VersionControlRemote/
