@@ -98,5 +98,5 @@ IPython Notebook Commands
 - `control-m b`: insert a new cell below the current cell
 
 
-.. _back:  http://github.com/swcarpentry/2012-10-lbl/
-.. _forward: http://github.com/swcarpentry/2012-10-lbl/tree/master/3a-VersionControlLocal
+.. _back:  ../1-Shell/
+.. _forward: ../3a-VersionControlLocal/

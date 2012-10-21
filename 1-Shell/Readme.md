@@ -1036,4 +1036,4 @@ push to remote version control repositories later.
 
 
 [back]: http://github.com/swcarpentry/2012-10-lbl/
-[forward]: http://github.com/swcarpentry/2012-10-lbl/tree/master/2-PythonIntro/
+[forward]: ../2-PythonIntro/

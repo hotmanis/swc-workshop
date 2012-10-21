@@ -426,5 +426,5 @@ the meantime.
 [git book](http://git-scm.com/book)
 
 
-[back]: http://github.com/UofCSCBC2012/2012-10-lbl/UofCSCBC2012/tree/master/2-PythonIntro
-[forward]: http://github.com/UofCSCBC2012/2012-10-lbl/UofCSCBC2012/tree/master/3b-VersionControlRemote/
+[back]: ../2-PythonIntro
+[forward]: ../3b-VersionControlRemote/

@@ -325,5 +325,5 @@ alterations,
 [Gitolite](https://github.com/sitaramc/gitolite) is a way for you to host your own multi-user git repositories. I'm not going to go into details here, but all you need is a machine with some drive space and network access. You can install [minimal ubuntu](https://help.ubuntu.com/community/Installation/MinimalCD), then sudo apt-get install gitolite will pull in everything you need. At that point, your collaborators will only need to send you their public ssh keys for you to configure pull and push access to the repos.
 
 
-[back]: http://github.com/thehackerwithin/SWC-bootcamp/tree/master/3a-VersionControlLocal/
-[forward]: http://github.com/thehackerwithin/SWC-bootcamp/tree/master/4-Debugging/
+[back]: ../3a-VersionControlLocal/
+[forward]: ../4-Debugging/
