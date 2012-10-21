@@ -31,32 +31,11 @@ provides :
 -   commit triggered mailing lists
 -   other service hooks (twitter, etc.)
 
-**NOTE** Public repos have public licences **by default**. If you don't want to share (in the most liberal sense) your stuff with the world, pay github money for private repos, or host your own.
+**NOTE** Public repos have public licences **by default**. If you don't want to 
+share (in the most liberal sense) your stuff with the world, use bitbucket for 
+private repos, pay github money for private repos, or host your own.
 
 ## github pasword
-
-Setting up github at first requires a github user name and password. 
-Please take a moment to [create a free one](https://github.com/signup/free)
-(if you want to start paying, you can add that to your account some 
-other day). 
-
-## github ssh keys
-
-It will help you to set up automatic authorization, so that github can handshake
-with your computer (in this case, your virtual machine).
-There are [some setup instructions](http://help.github.com/set-up-git-redirect)  
-on the website, but I'll do this along with you at the front of the room as 
-well. 
-
-In this way people can be certain who made commits to a git repository.
-Furthermore, a git server can be certain that the person who is pushing changes
-to a particular repository actually has commit access to that repo.
-
-Remember, your public/private SSH keys from yesterday?  We can use those to
-authenticate to github so that we don't have to enter our password every time
-we push to or fetch from the remote repository.
-
-## git config : Configuring your git environment
 
 Once you've set up your rsa keys, you need to tell github who you are.
 Crack open a terminal.
@@ -72,8 +51,8 @@ directory that's called **.gitconfig** . It's contents should look like
 :
 
     [user]
-          name = Joshua Smith
-          email = joshua.r.smith@gmail.com
+          name = Katy Huff
+          email = katyhuff@gmail.com
 
 This configuration step allows github to properly credit the authorship
 of changes you make in your repository. For projects with numerous
@@ -94,7 +73,7 @@ repository, you inform git of a new option for fetching updates and
 pushing commits.
 
 The **git remote** command allows you to add, name, rename, list, and
-delete repositories such as the original one **upstream** from your
+delete repositories such as the original one **origin** from your
 fork, others that may be **parallel** to your fork, and so on.
 
 ### Exercise : Fork Our GitHub Repository
@@ -113,7 +92,7 @@ Step 2 : Clone it. From your terminal :
     $ git clone git@github.com:username/SWC-bootcamp.git
     $ cd SWC-bootcamp
 
-Step 3 :
+Step 3 : Add the upstream repository as a remote in your local repository
 
     $ git remote add upstream git://github.com:JHU-SWC-2012/SWC-bootcamp.git
     $ git remote -v
@@ -124,6 +103,12 @@ Step 3 :
 
 All repositories that are clones begin with a remote called origin.
 
+Step 4 : Make sure that it worked by updating your local repository from your 
+fork.
+
+    $ git pull username master
+    Already up-to-date.
+
 ## git fetch : Fetching the contents of a remote
 
 Now that you have alerted your repository to the presence of others, it
@@ -132,10 +117,12 @@ want your master branch to track updates in the original SWC-bootcamp
 repository, you simply **git fetch** that repository into the master
 branch of your current repository.
 
+    $ git fetch origin
+
 The fetch command alone merely pulls down information recent changes
-from the original master (upstream) repository. By itself, the fetch
+from the original master (origin) repository. By itself, the fetch
 command does not change your local working copy. To update your local
-working copy to include recent changes in the original (upstream)
+working copy to include recent changes in the original (origin)
 repository, it is necessary to also merge.
 
 ## git merge : Merging the contents of a remote
@@ -150,7 +137,7 @@ its most powerful and its most complicated.
 
 Step 1 : Fetch the recent remote repository history
 
-    $ git fetch upstream
+    $ git fetch origin
 
 Step 2 : Make certain you are in the master branch and merge the
 upstream master branch into your master branch
@@ -169,7 +156,7 @@ than fetching and merging as it automates the branch matching.
 Specificially, to perform the same task as we did in the previous
 exercise, the pull command would be :
 
-    $ git pull upstream
+    $ git pull origin
     Already up-to-date.
 
 When there have been remote changes, the pull will apply those changes
@@ -188,12 +175,12 @@ We'll talk about conflicts later, but first, since we have no conflicts
 and are up to date, we can make a minor change and send our changes to
 your fork, the "origin."
 
-    $ git push origin master
+    $ git push username master
 
-If you have permission to push to the upstream repository, sending
+If you have permission to push to the origin repository, sending
 commits to that remote is exactly analagous.
 
-    $ git push upstream master
+    $ git push origin master
 
 In the case of the SWC-bootcamp code, new developer accounts will not allow
 this push to succeed. You're welcome to try it though.
@@ -214,7 +201,8 @@ than English. Since we're all from so many different places and speak
 so many languages, there will certainly be disagreements about what to
 say instead of "Welcome."
 
-I, for example, am from North Carolina, so I'll push (to the upstream repository) my own version of Welcome on line 2 of Readme.md.
+I, for example, am from Texas, so I'll push (to the origin repository) my own 
+version of Welcome on line 2 of Readme.md.
 
 You may speak another language, however, and may want to replace the 
 english word Welcome with an equivalent word that you prefer (willkommen, 
@@ -240,20 +228,20 @@ commit your changes.
     <edit the readme file and exit kate>
     $ git commit -am "Changed the welcome message to ... "
 
-Step 2 : Mirror the remote upstream repository in your master branch by
+Step 2 : Mirror the remote origin repository in your master branch by
 pulling down my changes
 
     $ git checkout master
     Switched to branch 'master'
-    $ git fetch upstream
-    $ git merge upstream/master
+    $ git fetch origin
+    $ git merge origin/master
     Updating 43844ea..3b36a87
     Fast-forward
      README.rst |   2 +-
      1 files changed, 1 insertions(+), 1 deletions(-)
 
 Step 3 : You want to push it to the internet eventually, so you pull
-updates from the upstream repository, but will experience a conflict.
+updates from the origin repository, but will experience a conflict.
 
     $ git merge development
     Auto-merging Readme.md
