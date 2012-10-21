@@ -2,15 +2,12 @@ Version Control Collaboratively
 
 ----
 
-[Back To Local Version
-Control](http://github.com/thehackerwithin/SWC-bootcamp/tree/master/3a-VersionControlLocal/)
-- [Forward To
-Debugging](http://github.com/thehackerwithin/SWC-bootcamp/tree/master/4-Debugging/)
+[Back To Local Version Control][back] - [Forward To Debugging][forward]
 
 ----
 
-**Presented By Joshua Ryan Smith**
-**Based on material by Katy Huff**
+**Presented By Katy Huff**
+**Based on material by Katy Huff with edits by Joshua Ryan Smith**
 
 ## github.com?
 
@@ -34,11 +31,9 @@ provides :
 -   commit triggered mailing lists
 -   other service hooks (twitter, etc.)
 
-## Digression: SSH
+**NOTE** Public repos have public licences **by default**. If you don't want to share (in the most liberal sense) your stuff with the world, pay github money for private repos, or host your own.
 
-add stuff.
-
-## github pasword 
+## github pasword
 
 Setting up github at first requires a github user name and password. 
 Please take a moment to [create a free one](https://github.com/signup/free)
@@ -53,36 +48,13 @@ There are [some setup instructions](http://help.github.com/set-up-git-redirect)
 on the website, but I'll do this along with you at the front of the room as 
 well. 
 
-    $ cd ~/.ssh
+In this way people can be certain who made commits to a git repository.
+Furthermore, a git server can be certain that the person who is pushing changes
+to a particular repository actually has commit access to that repo.
 
-It will likely say "no such file or directory."
-
-    $ ssh-keygen -t rsa -C "your_email@youremail.com"
-    Generating public/private rsa key pair.
-    Enter file in which to save the key (/home/thw/.ssh/id_rsa):  <press enter>
-
-The path that it provides will be to this home directory. This is okay. **Press 
-enter.** You may enter a passphrase. You'll see something like this :
-
-    Created directory '/home/thw/.ssh'.
-    Enter passphrase (empty for no passphrase): 
-    Enter same passphrase again: 
-    Your identification has been saved in /home/thw/.ssh/id_rsa.
-    Your public key has been saved in /home/thw/.ssh/id_rsa.pub.
-    The key fingerprint is:
-    09:06:c6:0f:24:b7:84:ef:22:74:de:95:f0:99:64:5d your_email@youremail.com
-    The key's randomart image is:
-    +--[ RSA 2048]----+
-    |  .+*   . .E     |
-    |  .=o+ o .       |
-    |   ..oB +        |
-    | . ....B .       |
-    |. o.. . S        |
-    |. ....           |
-    | . .             |
-    |                 |
-    |                 |
-    +-----------------+
+Remember, your public/private SSH keys from yesterday?  We can use those to
+authenticate to github so that we don't have to enter our password every time
+we push to or fetch from the remote repository.
 
 ## git config : Configuring your git environment
 
@@ -181,10 +153,10 @@ Step 1 : Fetch the recent remote repository history
     $ git fetch upstream
 
 Step 2 : Make certain you are in the master branch and merge the
-upstreeam master branch into your master branch
+upstream master branch into your master branch
 
     $ git checkout master
-    $ git merge upstream\master
+    $ git merge upstream/master
 
 Step 3 : Check out what happened by browsing the directory.
 
@@ -350,4 +322,8 @@ alterations,
 
 ## gitolite
 
-Add some stuff here.
+[Gitolite](https://github.com/sitaramc/gitolite) is a way for you to host your own multi-user git repositories. I'm not going to go into details here, but all you need is a machine with some drive space and network access. You can install [minimal ubuntu](https://help.ubuntu.com/community/Installation/MinimalCD), then sudo apt-get install gitolite will pull in everything you need. At that point, your collaborators will only need to send you their public ssh keys for you to configure pull and push access to the repos.
+
+
+[back]: ../3a-VersionControlLocal/
+[forward]: ../4-Debugging/
