@@ -11,21 +11,11 @@ Add a new workshop
 
 Check out that workshops website branch into a subdirectory:
 
-  $ git submodule add -b 2012-10-caltech.jekyll ./ 2012-10-caltech
-
-..  $ git submodule add -b 2012-10-caltech.jekyll --reference ./ ./ 2012-10-caltech
+  $ git submodule add -b 2012-10-caltech.jekyll git://github.com/wking/swc-workshop.git 2012-10-caltech
 
 `git submodule` does not seem to have been designed with this kind of
-local aggregation in mind, so it converts `./` to your public
-(upstream) repository and fetches the remote branch from there.  This
-means that the `2012-10-caltech.jekyll` branch must already be in your
-public repo.  You'll also want to edit
-`.git/modules/2012-10-caltech/config` to have
-
-  [remote "origin"]
-    url = ./
-
-I'll work on getting these fixed upstream.
+local aggregation in mind, and neither has [GitHub's Pages
+generator][pages-submodule].
 
 After creating the submodule, add a link from `index.md`, preferably
 in alphabetical order.  Finally, commit your changes:
@@ -53,3 +43,6 @@ Then commit your changes:
   $ git commit -am 'Update all submodules to current HEADs.'
 
 (todo: branch to checkout)
+
+
+[pages-submodule]: https://help.github.com/articles/using-submodules-with-pages

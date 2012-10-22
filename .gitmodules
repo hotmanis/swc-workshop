@@ -1,9 +1,9 @@
 [submodule "2012-10-caltech"]
 	path = 2012-10-caltech
-	url = ./
+	url = git://github.com/wking/swc-workshop.git
 [submodule "2012-10-lbl"]
 	path = 2012-10-lbl
-	url = ./
+	url = git://github.com/wking/swc-workshop.git
 [submodule "master"]
 	path = master
-	url = ./
+	url = git://github.com/wking/swc-workshop.git
