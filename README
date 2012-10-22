@@ -28,13 +28,28 @@ public repo.  You'll also want to edit
 I'll work on getting these fixed upstream.
 
 After creating the submodule, add a link from `index.md`, preferably
-in alphabetical order.
+in alphabetical order.  Finally, commit your changes:
+
+  $ git commit -am '2012-10-caltech: add workshop submodule.'
+
+Setting up submodules on a new checkout
+---------------------------------------
+
+When you checkout this branch, it will just have a `.gitmodules` file
+and empty module directories.  To initialize the submodule metadata
+and checkout the submodule content, you'll need to run:
+
+  $ git submodule update --init
 
 Maintain workshops
 ------------------
 
 You can pull current versions of each submodule with:
 
-  $ git submodule foreach git pull
+  $ git submodule foreach '(git checkout XXX && git pull)'
 
-(todo: submodule init, checkout before pull?)
+Then commit your changes:
+
+  $ git commit -am 'Update all submodules to current HEADs.'
+
+(todo: branch to checkout)
