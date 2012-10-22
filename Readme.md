@@ -3,8 +3,6 @@ layout: default
 title: Software Carpentry Workshop
 ---
 
-![SWC logo][logo]
-
 # Hello and Howdy!
 
 **Software Carpentry Bootcamp 2012 at Johns Hopkins University**
@@ -40,7 +38,6 @@ The bootcamp will be led by Matt Davis, Michael Droettboom, Joshua
 R. Smith, and Sasha Wood. It was organized by Software Carpentry, an
 online compendium of resources for scientific computation.
 
-[logo]: http://software-carpentry.org/software-carpentry-logo-285x58.png "SWC logo"
 [VirtualBox]: https://www.virtualbox.org/
 [image]: https://s3.amazonaws.com/SWC_JHU2012/swc_jhu2012_r03.ova
 [map]: http://goo.gl/maps/YUHI

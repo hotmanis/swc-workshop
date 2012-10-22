@@ -1,13 +1,14 @@
-/*******************************************************************************
+/******************************************************************************
 Slate Theme for Github Pages
 by Jason Costello, @jsncostello
-*******************************************************************************/
+adapted for swc-workshop
+******************************************************************************/
 
 @import url(pygment_trac.css);
 
-/*******************************************************************************
+/******************************************************************************
 MeyerWeb Reset
-*******************************************************************************/
+******************************************************************************/
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -51,14 +52,13 @@ a:focus {
   outline: none;
 }
 
-/*******************************************************************************
+/******************************************************************************
 Theme Styles
-*******************************************************************************/
+******************************************************************************/
 
 body {
   box-sizing: border-box;
   color:#373737;
-  background: #212121;
   font-size: 16px;
   font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -68,7 +68,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   margin: 10px 0;
   font-weight: 700;
-  color:#222222;
+  color:#2b3990;
   font-family: 'Lucida Grande', 'Calibri', Helvetica, Arial, sans-serif;
   letter-spacing: -1px;
 }
@@ -105,7 +105,6 @@ p {
 }
 
 footer p {
-  color: #f2f2f2;
 }
 
 a {
@@ -160,7 +159,7 @@ img {
 
 pre, code {
   width: 100%;
-  color: #222;
+  color: #2b3990;
   background-color: #fff;
 
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
@@ -262,9 +261,9 @@ img {
   max-width: 100%;
 }
 
-/*******************************************************************************
+/******************************************************************************
 Full-Width Styles
-*******************************************************************************/
+******************************************************************************/
 
 .outer {
   width: 100%;
@@ -292,13 +291,18 @@ Full-Width Styles
   border-bottom-right-radius: 2px;
 }
 
+#logo {
+  display: block;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  z-index: 0;
+  padding: 0px 295px 68px 0px;
+  background: url('../images/software-carpentry-logo-285x58.png') top right no-repeat;
+}
+
 #header_wrap {
-  background: #212121;
-  background: -moz-linear-gradient(top, #373737, #212121);
-  background: -webkit-linear-gradient(top, #373737, #212121);
-  background: -ms-linear-gradient(top, #373737, #212121);
-  background: -o-linear-gradient(top, #373737, #212121);
-  background: linear-gradient(top, #373737, #212121);
+  background: #FFF;
 }
 
 #header_wrap .inner {
@@ -306,19 +310,17 @@ Full-Width Styles
 }
 
 #project_title {
+  color: #2b3990;
   margin: 0;
-  color: #fff;
   font-size: 42px;
-  font-weight: 700;
-  text-shadow: #111 0px 0px 10px;
+  /*font-weight: 700;*/
 }
 
 #project_tagline {
-  color: #fff;
+  color: #2b3990;
   font-size: 24px;
-  font-weight: 300;
+  /*font-weight: 300;*/
   background: none;
-  text-shadow: #111 0px 0px 10px;
 }
 
 #downloads {
@@ -371,14 +373,14 @@ Full-Width Styles
 }
 
 #footer_wrap {
-  background: #212121;
+  background: #FFF;
 }
 
 
 
-/*******************************************************************************
+/******************************************************************************
 Small Device Styles
-*******************************************************************************/
+******************************************************************************/
 
 @media screen and (max-width: 480px) {
   body {
@@ -427,5 +429,4 @@ Small Device Styles
     max-width: 480px;
     font-size: 11px;
   }
-
 }
