@@ -1,0 +1,40 @@
+Multi-workshop website
+======================
+
+This branch contains per-workshop websites for several workshops, as
+well as an index with a list of all per-workshop websites.  We keep
+track of the workshop websites using `git submodule` to maintain local
+checkouts of each workshop's website branch.
+
+Add a new workshop
+------------------
+
+Check out that workshops website branch into a subdirectory:
+
+  $ git submodule add -b 2012-10-caltech.jekyll ./ 2012-10-caltech
+
+..  $ git submodule add -b 2012-10-caltech.jekyll --reference ./ ./ 2012-10-caltech
+
+`git submodule` does not seem to have been designed with this kind of
+local aggregation in mind, so it converts `./` to your public
+(upstream) repository and fetches the remote branch from there.  This
+means that the `2012-10-caltech.jekyll` branch must already be in your
+public repo.  You'll also want to edit
+`.git/modules/2012-10-caltech/config` to have
+
+  [remote "origin"]
+    url = ./
+
+I'll work on getting these fixed upstream.
+
+After creating the submodule, add a link from `index.md`, preferably
+in alphabetical order.
+
+Maintain workshops
+------------------
+
+You can pull current versions of each submodule with:
+
+  $ git submodule foreach git pull
+
+(todo: submodule init, checkout before pull?)

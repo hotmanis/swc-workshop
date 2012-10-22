@@ -1,0 +1,9 @@
+[submodule "2012-10-caltech"]
+	path = 2012-10-caltech
+	url = ./
+[submodule "2012-10-lbl"]
+	path = 2012-10-lbl
+	url = ./
+[submodule "master"]
+	path = master
+	url = ./
