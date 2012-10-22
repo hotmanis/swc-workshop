@@ -12,6 +12,7 @@ Add a new workshop
 Check out that workshops website branch into a subdirectory:
 
   $ git submodule add -b 2012-10-caltech.jekyll git://github.com/wking/swc-workshop.git 2012-10-caltech
+  $ git config --file .gitmodules submodule.2012-10-caltech.branch 2012-10-caltech.jekyll
 
 `git submodule` does not seem to have been designed with this kind of
 local aggregation in mind, and neither has [GitHub's Pages
@@ -36,13 +37,14 @@ Maintain workshops
 
 You can pull current versions of each submodule with:
 
-  $ git submodule foreach '(git checkout XXX && git pull)'
+  $ git submodule foreach 'git checkout $(git config --file $toplevel/.gitmodules submodule.$name.branch) && git pull'
 
-Then commit your changes:
+The `$toplevel` variable requires Git commit f030c96d, released in
+version 1.7.2.
+
+Commit your changes with:
 
   $ git commit -am 'Update all submodules to current HEADs.'
-
-(todo: branch to checkout)
 
 
 [pages-submodule]: https://help.github.com/articles/using-submodules-with-pages
