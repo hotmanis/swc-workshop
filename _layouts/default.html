@@ -4,7 +4,8 @@
     <meta charset='utf-8' />
     <meta http-equiv="X-UA-Compatible" content="chrome=1" />
     <meta name="description" content="Software Carpentry workshop content" />
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+    <link rel="stylesheet" type="text/css" media="screen"
+      href="{{ page.root }}stylesheets/stylesheet.css">
     <title>{% if page.title %} {{ page.title }} {% endif %}</title>
   </head>
   <body>
@@ -13,8 +14,8 @@
         <header class="inner">
           <a id="forkme_banner" href="https://github.com/wking/swc-workshop">View on GitHub</a>
           <section id="logo"></section>
-          <h1 id="project_title">swc-workshop</h1>
-          <h2 id="project_tagline">Software engineering for scientists in a hurry</h2>
+          <h1 id="project_title">SWC Workshop</h1>
+          <h2 id="project_tagline">{% if page.title %} {{ page.title }} {% endif %}</h2>
 
             <section id="downloads">
               <a class="zip_download_link" href="https://github.com/wking/swc-workshop/zipball/master">Download this project as a .zip file</a>

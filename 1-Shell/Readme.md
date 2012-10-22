@@ -1,4 +1,8 @@
-# The Shell
+---
+layout: default
+title: The Shell
+root: "../"
+---
 
 [Back To The Menu][back] - [Forward to Python][forward]
 

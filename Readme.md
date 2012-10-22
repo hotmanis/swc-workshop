@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Software Carpentry Workshop
+title: Software engineering for scientists in a hurry
 ---
 
 # Hello and Howdy!
@@ -37,6 +37,12 @@ throughout the days.
 The bootcamp will be led by Matt Davis, Michael Droettboom, Joshua
 R. Smith, and Sasha Wood. It was organized by Software Carpentry, an
 online compendium of resources for scientific computation.
+
+## Content
+
+* [The shell](1-Shell/Readme.html)
+* [Python](2-PythonIntro/Readme.html)
+
 
 [VirtualBox]: https://www.virtualbox.org/
 [image]: https://s3.amazonaws.com/SWC_JHU2012/swc_jhu2012_r03.ova
