@@ -1,3 +1,8 @@
+---
+layout: default
+title: Software Carpentry Workshop
+---
+
 ![SWC logo][logo]
 
 # Hello and Howdy!

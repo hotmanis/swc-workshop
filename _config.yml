@@ -1,0 +1,10 @@
+# From https://help.github.com/articles/using-jekyll-with-pages:
+#
+#   GitHub's Pages servers currently use Jekyll 0.11.0 with Liquid
+#   2.2.2, and run it using this command:
+#
+#     $ jekyll --pygments --no-lsi --safe
+
+lsi:      false
+pygments: true
+safe:     false
