@@ -9,9 +9,9 @@ checkouts of each workshop's website branch.
 Add a new workshop
 ------------------
 
-Check out that workshops website branch into a subdirectory:
+Check out that workshop's website branch into a subdirectory:
 
-  $ git submodule add -b 2012-10-caltech.jekyll git://github.com/wking/swc-workshop.git 2012-10-caltech
+  $ git submodule add -b 2012-10-caltech.jekyll ./ 2012-10-caltech
   $ git config --file .gitmodules submodule.2012-10-caltech.branch 2012-10-caltech.jekyll
 
 `git submodule` does not seem to have been designed with this kind of

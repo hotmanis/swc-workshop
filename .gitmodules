@@ -1,20 +1,20 @@
 [submodule "2012-10-caltech"]
 	path = 2012-10-caltech
-	url = git://github.com/wking/swc-workshop.git
+	url = ./
 	branch = 2012-10-caltech.jekyll
 [submodule "2012-10-lbl"]
 	path = 2012-10-lbl
-	url = git://github.com/wking/swc-workshop.git
+	url = ./
 	branch = 2012-10-lbl.jekyll
 [submodule "master"]
 	path = master
-	url = git://github.com/wking/swc-workshop.git
+	url = ./
 	branch = jekyll
 [submodule "2012-10-ucb"]
 	path = 2012-10-ucb
-	url = git://github.com/wking/swc-workshop.git
+	url = ./
 	branch = 2012-10-ucb.jekyll
 [submodule "2012-10-gmu"]
 	path = 2012-10-gmu
-	url = git://github.com/wking/swc-workshop.git
+	url = ./
 	branch = 2012-10-gmu.jekyll
