@@ -10,3 +10,11 @@
 	path = master
 	url = git://github.com/wking/swc-workshop.git
 	branch = jekyll
+[submodule "2012-10-ucb"]
+	path = 2012-10-ucb
+	url = git://github.com/wking/swc-workshop.git
+	branch = 2012-10-ucb.jekyll
+[submodule "2012-10-gmu"]
+	path = 2012-10-gmu
+	url = git://github.com/wking/swc-workshop.git
+	branch = 2012-10-gmu.jekyll
